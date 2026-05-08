@@ -59,8 +59,9 @@ function jogar() {
               console.log("Você tentou lutar e sua espada quebrou.");
               console.log("")
               console.log("GAME OVER".red);
+              console.log("")
 
-              prompt("Precione [Enter] para voltar ao menu")
+              prompt("Precione [Enter] para voltar ao menu".bgWhite)
               inventario = ["Espada velha"];
               jogando = false
               break;
@@ -105,8 +106,9 @@ function jogar() {
               console.log("Você fica cercado pelos guardas")
               console.log("")
               console.log("GAME OVER".red)
+              console.log("")
                   
-              prompt("Precione [Enter] para voltar")
+              prompt("Precione [Enter] para voltar".bgWhite)
               inventario = ["Espada velha"];
               jogando = false
               break;
@@ -162,7 +164,7 @@ function jogar() {
                             console.log("Parabéns, você terminou o jogo".green)
                             console.log("")
 
-                              prompt("Precione [Enter] para voltar ao menu")
+                              prompt("Precione [Enter] para voltar ao menu".bgWhite)
                               inventario = ["Espada velha"];
                               jogando = false
                               break;
@@ -177,7 +179,7 @@ function jogar() {
                               console.log("GAME OVER".red)
                               console.log("")
 
-                              prompt("Precione [Enter] para voltar ao menu")
+                              prompt("Precione [Enter] para voltar ao menu".bgWhite)
                               inventario = ["Espada velha"];
                               jogando = false
                             break;
@@ -197,8 +199,9 @@ function jogar() {
                           console.log("Você tentou lutar mas eram muitos guardas")
                           console.log("")
                           console.log("GAME OVER".red)
+                          console.log("")
 
-                          prompt("Precione [Enter] para voltar ao menu")
+                          prompt("Precione [Enter] para voltar ao menu".bgWhite)
                           inventario = ["Espada velha"];
                           jogando = false
                           break;
@@ -222,7 +225,7 @@ function jogar() {
                   console.log("")
                   console.log("GAME OVER".red)
 
-                  prompt("Precione [Enter] para voltar ao menu")
+                  prompt("Precione [Enter] para voltar ao menu".bgWhite)
                   inventario = ["Espada velha"];
                   jogando = false
                   break;
@@ -266,7 +269,7 @@ function jogar() {
           console.log("O baú já está vazio.");
         }
 
-        prompt("\nPressione ENTER...");
+        prompt("\nPressione ENTER...".bgWhite);
         break;
 
       case 3:
@@ -277,7 +280,7 @@ function jogar() {
         console.log("")
         console.log("GAME OVER".red);
 
-                prompt("\nPressione ENTER para voltar ao Menu");
+                prompt("\nPressione ENTER para voltar ao Menu".bgWhite);
 
         jogando = false;
         break;
@@ -308,6 +311,15 @@ function jogar() {
 do {
   console.clear();
 
+  console.log(`░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░       ░▒▓██████▓▒░ ░▒▓██████▓▒░ ░▒▓███████▓▒░▒▓████████▓▒░▒▓█▓▒░      ░▒▓████████▓▒░ 
+   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░        
+   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░        
+   ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓██████▓▒░        ░▒▓█▓▒░      ░▒▓████████▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓██████▓▒░   
+   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░        
+   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░        
+   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░       ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░   ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓████████▓▒░ 
+                                                                                                                              
+                                                                                                                              `.green);
   console.log(`Bem vindo ${nome}, escolha uma das opções abaixo`.green);
   console.log("1. Jogar");
   console.log("2. Inventário");
@@ -327,11 +339,11 @@ do {
       console.log("=== INVENTÁRIO ===");
       inventario.forEach(item => console.log("- " + item));
 
-      prompt("\nPressione ENTER...");
+      prompt("\nPressione ENTER...".bgWhite);
       break;
 
     case 3:
-      let confirmar = prompt("Deseja realmente sair? (s/n): ");
+      let confirmar = prompt("Deseja realmente sair? (s/n): ".bgWhite);
 
       if (confirmar.toLowerCase() === "s") {
         console.log("Te espero na próxima aventura!");
@@ -342,7 +354,7 @@ do {
 
     default:
       console.log("Opção inválida!");
-      prompt("Pressione ENTER...");
+      prompt("Pressione ENTER...".bgWhite);
       break;
   }
 
