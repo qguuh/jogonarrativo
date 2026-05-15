@@ -1,3 +1,9 @@
+/**
+ * Jogo de Aventura em Texto
+ * @author: Gustavo e isaac
+ * @version: 1.0
+ */
+
 const prompt = require("prompt-sync")();
 require("colors");
 
